@@ -1,0 +1,160 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: $default;
+  font-size: 16px;
+  line-height: 30px;
+  @extend %dmsans-700;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  @extend %dmsans-700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #191919;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.filter {
+  @extend %dmsans-700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #8b8b8b;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+}
+
+.parnters--login-page {
+  padding: 65px 0 65px !important;
+}
+
+.breadcrumbs {
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #83898f;
+  }
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  &__item {
+    position: relative;
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &__item::after {
+    content: '/';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    // left: 45px;
+    right: -12px;
+  }
+  &__link {
+    color: inherit;
+  }
+}
+
+.blog__title {
+  color: #243f4d;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin-right: 16px;
+  }
+  &__link,
+  &__next {
+    @extend %rubik-400;
+    font-size: 16px;
+    color: #243f4d;
+    line-height: 1.875;
+    padding: 15px 20px;
+    border: 1px solid rgb(163, 187, 200);
+  }
+  &__link--active {
+    background-color: #a3bbc8;
+    @extend %rubik-400;
+    font-size: 16px;
+    color: #243f4d;
+    line-height: 1.875;
+    padding: 15px 20px;
+    border: 1px solid rgb(163, 187, 200);
+    color: #fff;
+  }
+  &__next {
+    
+     line-height: 1.235;
+  }
+}
+
+.search {
+  margin-bottom: 60px;
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #edf1f4;
+    border-radius: 5px;
+  }
+  &__input {
+    width: 221px;
+    height: 43px;
+    border: none;
+    padding: 0 15px;
+  }
+  &__btn {
+    border: none;
+    height: 43px;
+    width: 48px;
+    background-color: #edf1f4;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  &__img {
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
